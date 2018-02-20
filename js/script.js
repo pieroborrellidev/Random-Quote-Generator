@@ -1,6 +1,7 @@
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
+// hold the quotes to display
 var quotes = [
   {
     quote: "I'm not sure if I was the first man in space or the last dog.",
@@ -20,9 +21,17 @@ var quotes = [
   quote: "There is only one thing that makes a dream impossible to achieve: the fear of failure.",
   source: "Paulo Coelho",
   citation:"The Alchemist",
-  year: "1988"}
+  year: "1988"},
+  {
+  quote : "So, I love you because the entire universe conspired to help me find you."
+  source : "Paulo Coelho",
+  citation : "The Alchemist",
+  year : "1998"
+  }
   ];
 
+
+  // display the quotes when button is clicked
   function printQuote() {
     let quote = getRandomQuote();
     let template = `<p class="quote"> ${quote.quote} </p>
@@ -39,6 +48,7 @@ var quotes = [
 
   }
 
+  // get a random quote for displaying
   function getRandomQuote() {
     let randomQuote = Math.floor(Math.random() * quotes.length);
     return quotes[randomQuote];
