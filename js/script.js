@@ -23,10 +23,10 @@ var quotes = [
   citation:"The Alchemist",
   year: "1988"},
   {
-  quote : "So, I love you because the entire universe conspired to help me find you."
-  source : "Paulo Coelho",
-  citation : "The Alchemist",
-  year : "1998"
+  quote: "So, I love you because the entire universe conspired to help me find you.",
+  source: "Paulo Coelho",
+  citation: "The Alchemist",
+  year: "1998"
   }
   ];
 
